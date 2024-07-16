@@ -1,0 +1,13 @@
+---
+const { title, price, image } = Astro.props
+---
+
+<div class="product-box">
+  <img src={image} alt="Titel" width="100%" />
+  <h3>{title}</h3>
+
+  <div class="box-content">
+    <span>{price}</span>
+    <button>Order now</button>
+  </div>
+</div>
